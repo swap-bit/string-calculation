@@ -1,0 +1,17 @@
+<mat-card appearance="outlined" class="cardCls">
+  <mat-card-header>
+    <mat-card-title>String Calculator</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter a number</mat-label>
+      <input type="text" matInput [(ngModel)]="input">
+    </mat-form-field>
+    <button mat-stroked-button (click)="calculate()">Calculate Sum</button>
+    <div *ngIf="result !== null">Result: {{ result }}</div>
+    <div *ngIf="errorMessage !== null" class="error">Error: {{ errorMessage }}</div>
+  </mat-card-content>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,21 @@
+.cardCls {
+  margin: 10px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
